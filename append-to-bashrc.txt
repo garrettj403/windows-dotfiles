@@ -1,0 +1,19 @@
+
+
+### Added by github.com/garrettj403/rpi-dotfiles ###
+
+# Common directories
+if [ -f ~/.dotfiles/bash_profile/paths ]; then
+    . ~/.dotfiles/bash_profile/paths
+fi
+
+# Functions
+if [ -f ~/.dotfiles/bash_profile/functions ]; then
+    . ~/.dotfiles/bash_profile/functions
+fi
+
+# Aliases
+if [ -f ~/.dotfiles/bash_profile/aliases ]; then
+    . ~/.dotfiles/bash_profile/aliases
+fi
+

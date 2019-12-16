@@ -1,0 +1,36 @@
+# ALIAS
+#
+# Aliases for common commands
+
+## Safety first ##
+alias del="rm -i"
+
+## Listing files ##
+alias ll="ls -hartl"         # list full info
+alias lsc="clear; ll"        # list and clear
+alias lsh="ls -ld .?*"       # list hidden files and directories
+alias lshf="lsh | grep -v /" # list hidden files
+
+## Moving around ##
+alias home="cd ~"
+alias back="cd ..; lsc"
+alias b="back"
+alias ..="cd .."
+alias ...="cd ../.."
+alias c="clear"
+
+## Modifying bash profile ##
+alias sbp="source ~/.bashrc"
+alias obp="open ~/.bashrc"
+
+## Misc commands ##
+alias hg='history | grep '
+alias g='grep -i'
+alias git_rm_all="git ls-files --deleted -z | xargs -0 git rm"
+alias git-rm-all="git_rm_all"
+alias pingtest="ping -c 5 google.com"
+alias search_python="find . -not -path '*/\.*' -name '*.py' -print0 | xargs -0 grep -Rn "
+alias search-python="search_python"
+alias search_tex="find . -not -path '*/\.*' -name '*.tex' -print0 | xargs -0 grep -Rn "
+alias search-tex="search_tex"
+

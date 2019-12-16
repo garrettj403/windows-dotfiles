@@ -1,0 +1,19 @@
+# PATHS
+#
+# Basic paths that are common to all my machines
+
+alias home="cd ~"
+alias dl="cd /mnt/c/Users/jgarrett/Downloads"
+alias desk="cd /mnt/c/Users/jgarrett/Desktop"
+alias doc="cd /mnt/c/Users/jgarrett/Documents"
+alias docs="cd /mnt/c/Users/jgarrett/Documents"
+
+alias dot="cd ~/.dotfiles"
+
+alias gd="cd /mnt/c/Users/jgarrett/Google\ Drive"
+alias gdrive="gd"
+alias proj="cd /mnt/c/Users/jgarrett/Google\ Drive/Projects"
+
+export PATH="$HOME/.dotfiles/git/bin:$PATH"
+#export PATH="$HOME/GoogleDrive/Projects/QMix/bin:$PATH"
+
