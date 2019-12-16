@@ -1,4 +1,4 @@
-# Dotfiles for my Windows PC
+# Dotfiles for my Windows PCs
 
 I have multiple Windows PCs. These files help configure them so that they all operate the same way (at least for bash).
 
