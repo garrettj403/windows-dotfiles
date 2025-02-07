@@ -1,13 +1,10 @@
 [user]
 	name = John Garrett
-	email = john.garrett@astro.ox.ac.uk
+	email = garrettj403@gmail.com
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[user]
-	email = john.garrett@astro.ox.ac.uk
-	name = John Garrett
 [alias]
   lg = log --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%cr)%Creset %s %C(cyan)<%an>%Creset %C(blink yellow)%d%Creset' --abbrev-commit --date=relative
   st = status
@@ -30,18 +27,14 @@
   added = yellow
   changed = green
   untracked = cyan
-[credential]
-	helper = osxkeychain
 [push]
 	default = simple
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = nano
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Data/garrett/applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[http]
-	sslVerify = false
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
