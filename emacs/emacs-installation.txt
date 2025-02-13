@@ -1,0 +1,3 @@
+https://github.com/hubisan/emacs-wsl
+https://emacsredux.com/blog/2021/12/19/using-emacs-on-windows-11-with-wsl2/
+
